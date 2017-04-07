@@ -33,21 +33,30 @@ Pizza.prototype.receipt = function () {
   var topping2 = 2;
   var topping3 = 2;
   var topping4 = 2;
-  
-  var pizzaSize = (Small || Medium || Large)
-  var Small = 2;
-  var Medium = 4;
-  var Large = 6;
+  var pizzaSize = $("#toppingForm5").val();
+  // var pizzaSize = (Small || Medium || Large);
 
-  var addAll = parseInt(topping1 + topping2 + topping3 + topping4)
-    if (pizzaSize = Small) {
-      return addAll + 2
-    }
-    else if (pizzaSize = Medium) {
-      return addAll + 4
-    }
-    else {
-      return addAll + 6 }
+  // var pizzaSize = (Small || Medium || Large)
+  // if (pizzaSize = "2") {
+  //   pizzaSize = 2
+  // } else if (pizzaSize = "4") {
+  //   pizzaSize = 4
+  // } else {
+  //   pizzaSize = 6 }
+  //
+  // var Small = 2;
+  // var Medium = 4;
+  // var Large = 6;
+
+  var addAll = parseInt(topping1 + topping2 + topping3 + topping4 + parseInt(pizzaSize));
+    // if (pizzaSize = "Small") {
+    //   return addAll + 2
+    // }
+    // else if (pizzaSize = "Medium") {
+    //   return addAll + 4
+    // }
+    // else {
+    //   return addAll + 6 }
 
 
 
