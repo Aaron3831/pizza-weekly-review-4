@@ -37,5 +37,6 @@ p {
 }
 
 .backgroundimg {
-  background-image: url(https://static.turbosquid.com/Preview/2014/08/01__17_25_29/brick-2.jpg7d9887f7-1059-4073-858e-fcadaa7c4bd8Original.jpg);
+  background-image: url(https://i.ytimg.com/vi/UG6fo7FMOsY/maxresdefault.jpg);
+  background-size: cover;
 }
