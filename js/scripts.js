@@ -61,7 +61,7 @@ Pizza.prototype.receipt = function () {
 
 
 
-  $("#addEverything").text(addAll)
+  $("#addEverything").text("$" + addAll)
 
   // this.addAll = parseInt(topping1 + topping2 + topping3 + topping4)
 
