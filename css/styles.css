@@ -47,6 +47,7 @@ p {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-image: url(http://cdn1.bostonmagazine.com/wp-content/uploads/sites/2/2015/02/zoombinis_Arno.jpg);
+  background-size: cover;
   text-align: center;
 }
