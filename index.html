@@ -8,14 +8,14 @@
     <meta charset="utf-8">
     <title>Pizza Customizer</title>
   </head>
-  <body>
+  <body class="backgroundimg">
     <div class="jumbotron">
       <h1>Someone make me a Pizza</h1>
     </div>
     <div class="container">
       <div class="row">
         <form id="toppingList" action="index.html" method="post">
-          <div class="col-md-6">
+          <div class="col-md-6 float-left">
             <select class="form-control form-margin" id="toppingForm1">
               <option></option>
               <option>Cheese</option>
@@ -46,13 +46,13 @@
             </select>
             <select class="form-control form-margin" id="toppingForm5">
               <option></option>
-              <option value="2">Small</option>
-              <option value="4">Medium</option>
-              <option value="6">Large</option>
+              <option value="2">Small 12"</option>
+              <option value="4">Medium 14"</option>
+              <option value="6">Large 16"</option>
             </select>
 
-            <button type="submit" name="button">Toppings</button>
-            <div class="col-md-6">
+            <button type="submit" name="button">Confirm</button>
+            <div class="col-md-6 float-right">
               <h2>You've Selected the Following Toppings and Size: </h2>
               <ul id="results">
 
@@ -60,13 +60,18 @@
             </div>
           </div>
         </form>
-        <form id="addEverything">
-          <h2>Your Total is: </h2>
-          <p id="addAll">
+        <div class="row">
+          <div class="table">
+            <form id="addEverything">
+              <h2 class="heading2">Your Total is: </h2>
+              <p id="addAll">
 
-          </p>
-          <button type="click" name="button">Receipt of Purchase</button>
-        </form>
+              </p>
+              <button type="click" name="button">Receipt of Purchase</button>
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
   </body>

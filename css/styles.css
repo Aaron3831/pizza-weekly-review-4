@@ -4,4 +4,38 @@
 
 .jumbotron {
   text-align: center;
+  background-image: url(https://t3.ftcdn.net/jpg/00/96/63/92/240_F_96639207_V8y6ba1Pu7KCownICrT2zaI6LHwQDnTY.jpg);
+  background-size: cover;
+}
+
+.heading2 {
+  border-radius: 2px;
+  border: black;
+  margin: 30px;
+}
+
+h2 {
+  color: white;
+}
+
+ul {
+  color: white;
+  font-size: 24px;
+}
+
+p {
+  color: white;
+  font-size: 30px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.backgroundimg {
+  background-image: url(https://static.turbosquid.com/Preview/2014/08/01__17_25_29/brick-2.jpg7d9887f7-1059-4073-858e-fcadaa7c4bd8Original.jpg);
 }

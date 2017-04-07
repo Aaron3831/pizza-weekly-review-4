@@ -34,21 +34,24 @@ Pizza.prototype.receipt = function () {
   var topping3 = 2;
   var topping4 = 2;
   var pizzaSize = $("#toppingForm5").val();
-  // var pizzaSize = (Small || Medium || Large);
 
-  // var pizzaSize = (Small || Medium || Large)
-  // if (pizzaSize = "2") {
-  //   pizzaSize = 2
-  // } else if (pizzaSize = "4") {
-  //   pizzaSize = 4
-  // } else {
-  //   pizzaSize = 6 }
-  //
   // var Small = 2;
   // var Medium = 4;
   // var Large = 6;
+  // var pizzaSize = (Small || Medium || Large);
+  //
+  // if (pizzaSize = "Small") {
+  //   pizzaSize = 2
+  // } else if (pizzaSize = "Medium") {
+  //   pizzaSize = 4
+  // } else {
+  //   pizzaSize = 6 }
+
+
 
   var addAll = parseInt(topping1 + topping2 + topping3 + topping4 + parseInt(pizzaSize));
+
+  console.log(addAll)
     // if (pizzaSize = "Small") {
     //   return addAll + 2
     // }
@@ -61,7 +64,7 @@ Pizza.prototype.receipt = function () {
 
 
 
-  $("#addEverything").text("$" + addAll)
+  $("#addAll").text("$" + addAll)
 
   // this.addAll = parseInt(topping1 + topping2 + topping3 + topping4)
 
@@ -95,7 +98,7 @@ $(document).ready(function() {
 
     var receiptPizza = newPizza.receipt();
     console.log(receiptPizza)
-    $("p#addAll").append(receiptPizza)
+    // $("p#addAll").append(receiptPizza)
     });
   });
 });
