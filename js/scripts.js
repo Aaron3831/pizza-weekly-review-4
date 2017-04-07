@@ -30,12 +30,14 @@ Pizza.prototype.receipt = function () {
   var medium = { name: "medium", price: 4.00 };
   var small = { name: "small", price: 2.00 };
 
-  var totalPrice = { name: "Receipt", price}
+  var totalPrice = { name: "Receipt", price: }
 };
 
 // UI
-$(document).ready(function(event) {
+$(document).ready(function() {
+  $("form#toppingList").sibmit(function(event)
   event.preventDefault();
 
-  $("")
+
+  });
 });
