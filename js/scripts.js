@@ -4,6 +4,8 @@ function Pizza (topping1, topping2, topping3, topping4, pizzaSize) {
   this.topping3 = topping3;
   this.topping4 = topping4;
   this.pizzaSize = pizzaSize;
+  this.addAll = [];
+
 }
 // Pizza.prototype.ingredients = function () {
 //   var topping1 = "Cheese";
@@ -21,19 +23,40 @@ Pizza.prototype.pizzaString = function newPizzaToString() {
 };
 
 Pizza.prototype.receipt = function () {
-  var Cheese = 2.00;
-  var Pepperoni = 2.00;
-  var Olives = 2.00;
-  var Artichokes = 2.00;
-  var Large = 6.00;
-  var Medium = 4.00;
-  var Small = 2.00 ;
-  var None = 0;
+  this.topping1 = topping1;
+  this.topping2 = topping2;
+  this.topping3 = topping3;
+  this.topping4 = topping4;
+  // this.pizzaSize = pizzaSize;
 
-  var add = topping1 + topping2 + topping3 + topping4 + pizzaSize
+  var topping1 = 2;
+  var topping2 = 2;
+  var topping3 = 2;
+  var topping4 = 2;
+  
+  var pizzaSize = (Small || Medium || Large)
+  var Small = 2;
+  var Medium = 4;
+  var Large = 6;
 
-  return add;
-  $("#addAll").text(add);
+  var addAll = parseInt(topping1 + topping2 + topping3 + topping4)
+    if (pizzaSize = Small) {
+      return addAll + 2
+    }
+    else if (pizzaSize = Medium) {
+      return addAll + 4
+    }
+    else {
+      return addAll + 6 }
+
+
+
+
+  $("#addEverything").text(addAll)
+
+  // this.addAll = parseInt(topping1 + topping2 + topping3 + topping4)
+
+  return addAll;
 
   // var totalPrice = { name: "Receipt", price: []}
 };
@@ -53,19 +76,17 @@ $(document).ready(function() {
 
 
   var newPizza = new Pizza (firstTopping, secondTopping, thirdTopping, fourthTopping, pizzaSize);
-  console.log(newPizza)
-
-  console.log(newPizza.pizzaString())
 
   $("ul#results").append(newPizza.pizzaString());
-  });
-  $("form#toppingList").click(function(event) {
+
+  $("form#addEverything").click(function(event) {
   event.preventDefault();
 
-  return newPizza.receipt(newPizza);
-  console.log(newPizza.receipt(newPizza))
+  console.log(newPizza)
 
-  $("p#price").text(newPizza);
-
+    var receiptPizza = newPizza.receipt();
+    console.log(receiptPizza)
+    $("p#addAll").append(receiptPizza)
+    });
   });
 });
