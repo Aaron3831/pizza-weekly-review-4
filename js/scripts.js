@@ -48,7 +48,7 @@ $(document).ready(function() {
 
   var newPizza = new Pizza (firstTopping, secondTopping, thirdTopping, fourthTopping, pizzaSize);
 
-  $("ul#results").append(newPizza.pizzaString());
+  $("ul#results").text(newPizza.pizzaString());
 
   $("form#addEverything").click(function(event) {
   event.preventDefault();
