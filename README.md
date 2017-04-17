@@ -13,13 +13,17 @@ _A project that allows users to customize a pizza, order it and be presented wit
 _BDD:
 
   - Create a constructor that will create a pizza object
-    - Will include toppings and size
+    - Will include toppings size and price
       - input pizza toppings and size
       - output given pizza toppings and size
 
   - Create prototype method to determine the price of the pizza based on selection of ingredients
     - input - pizza with more/different toppings and size
     - output varying price based on choices
+    
+  - Create prototype to determine total price
+    - input - price of ingredients
+    - output - combined prices
 
 ## Setup/Installation Requirements
 
